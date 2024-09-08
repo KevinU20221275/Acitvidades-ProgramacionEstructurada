@@ -32,7 +32,9 @@ disponible como ahorro.
 • Si los gastos exceden el ingreso, se debe mostrar cuánto dinero falta para cubrir los
 gastos.
 */
-
+console.log("========== CALCULO DE PRESUPUESTO FAMILIAR ==========")
+console.log(`Tu presupuesto mensual es: ${monthlyIncome}`)
+console.log(`Total de tus gastos mensuales: ${totalExpenses}`)
 if (totalExpenses < monthlyIncome) {
   const remainingAmount = monthlyIncome - totalExpenses;
   console.log(`El presupuesto está equilibrado y tienes un ahorro de:: $${remainingAmount}`);
