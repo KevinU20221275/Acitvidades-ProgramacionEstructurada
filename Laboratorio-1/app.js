@@ -11,7 +11,7 @@ operaciones para determinar si el inventario necesita ser repuesto.
 */
 
 // productos
-let camisetas = 100;
+let camisetas = 80; // si cambio este valor por ej: a 80 el programa solo evaluarua esta condición y no me dira si sera necesario reponer otro, como en el caso de los zapatos. lo ideal seria cambiar la estrutura por: 
 let pantalones = 150;
 let zapatos = 75;
 
@@ -33,11 +33,11 @@ console.log(`UNIDADES TOTALES : ${totalProductos} productos \n`)
 // verificando el inventario
 if (camisetas < 100) {
     console.log(`Es necesario reponer camisetas.\nUnidades en Stock: ${camisetas}`);
-} else if (pantalones < 100) {
+}if (pantalones < 100) {
     console.log(`Es necesario reponer pantalones.\nUnidades en Stock: ${pantalones}`);
-} else if (zapatos < 100) {
-    console.log(`Es Necesario reponer zapatos.\nUnidades en Stock: ${zapatos}`);
-} else {
+}if (zapatos < 100) {
+    console.log(`Es necesario reponer zapatos.\nUnidades en Stock: ${zapatos}`);
+}else {
     console.log("No es necesario reponer ningun producto");
 }
 
